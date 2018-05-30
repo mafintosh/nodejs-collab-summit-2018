@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div>Node.js collab summit 2018</div>
+  <div>- the streams edition</div>
+  <div>
+    1. <em>Iterating streams</em> in core<br><br>
+    2. <em>Low level streams</em> in core/c++ (BOB)
+  </div>
+  <div>
+    1. <em>Iterating streams</em> in core
+  </div>
+  <div>
+    Streams in core are heavily used across the ecosystem
+  </div>
+  <div>
+    We cannot <em>"break the world"</em> but we can fix the inconsistencies
+  </div>
+  <div>
+    Things we wanna improve:
+  </div>
+  <div>
+    <ul>
+      <li>Test coverage</li>
+      <li>Error handling</li>
+      <li style="white-space: nowrap">readable-stream maintenance</li>
+    </ul>
+  </div>
+  <div>
+    Error handling
+  </div>
+  <div>
+    https://github.com/nodejs/node/issues/20096
+  </div>
+  <div>
+    TL;DR<br><br>
+
+    Make streams always call <em>.destroy()</em> as the final lifycycle step
+  </div>
+  <div>
+    <ul>
+      <li>Make core use <em>.destroy()</em> to error handle streams</li>
+      <li>Every stream will emit <em>close</em> as the final step</li>
+      <li><em>close</em> is always the last of the stream events</li>
+    </ul>
+  </div>
+  <div>
+    2. <em>Low level streams</em> in core
+  </div>
+  <div>
+    (@Fishrock123)
+  </div>
+</body>
+</html>
