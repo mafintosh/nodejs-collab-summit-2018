@@ -1,5 +1,5 @@
 # node.js collab summit 2018
 
-Streams workshop
+Streams discussion
 
 https://mafintosh.github.io/nodejs-collab-summit-2018

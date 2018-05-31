@@ -63,5 +63,96 @@
   <div>
     (@Fishrock123)
   </div>
+  <div>Node.js collab summit 2018</div>
+  <div>- the <del>streams</del> BOB edition</div>
+  <div>
+    A different<br><em>Project Approach</em>
+  </div>
+  <div>
+    Not immediately necessary
+  </div>
+  <div>
+    We can take the time to get it right
+  </div>
+  <div>
+    Some terms:
+    <ul>
+      <li><em>Consumer</em> / "<em>Sink</em>" - API end where data goes to.</li>
+      <li><em>Producer</em> / "<em>Source</em>" - API end where data comes from.</li>
+    </ul>
+  </div>
+  <div>
+    1. <em>Why</em><br>
+    2. <em>Goals</em><br>
+    3. <em>Current Api</em><br>
+    4. <em>Performance</em>
+  </div>
+  <div>
+    1. <em>Why</em> reinvent streams?
+  </div>
+  <div>
+    The Streams <em>user experiance</em> is bad
+  </div>
+  <div>
+    Streams <em>performance</em> is underwhelming
+  </div>
+  <div>
+    3. <em>Goals</em>
+  </div>
+  <div>
+    <ul>
+      <li><em>Performance</em> and <em>ease-of-use</em> are key motivations.</li>
+      <li>Implementable in a performant and usable way for both <em>JS and C++</em>.</li>
+      <li>Browser portability is preferable.</li>
+    </ul>
+  </div>
+  <div>
+    Protocol <em>Goals</em>
+  </div>
+  <div>
+    <ul>
+      <li>Pull-based</li>
+      <li>Binary-only</li>
+      <li>Stateless (in-protocol)</li>
+      <li>One-to-one</li>
+      <li>Timing agnostic</li>
+      <li>No buffering</li>
+      <li>In-line errors and EOF</li>
+    </ul>
+  </div>
+  <div>
+    Consumer <em>Goals</em>
+  </div>
+  <div>
+    <ul>
+      <li>Should own any preallocated memory (the buffer).</li>
+      <li>Must never make more than one data request upstream at the same time.</li>
+    </ul>
+  </div>
+  <div>
+    The <em>Current API</em>
+  </div>
+  <div>
+    github.com/Fishrock123/bob#api-reference
+  </div>
+  <div>
+    Current API <em>Performance</em>
+  </div>
+  <div>
+    <ul>
+      <li>30% decrease of CPU time in bad cases</li>
+      <li><em>Up to 8x decrease</em> in good cases</li>
+      <li>Should correlate to overall throughput but may not be exact.</li>
+    </ul>
+  </div>
+  <div>
+    github.com/Fishrock123/bob/blob/master/performance.md
+  </div>
+  <div>
+    <em>\o/</em>
+  </div>
+  <div>
+    github.com/Fishrock123/bob
+  </div>
 </body>
 </html>
